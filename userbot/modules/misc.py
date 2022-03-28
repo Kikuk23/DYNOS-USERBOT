@@ -62,9 +62,9 @@ async def shutdown_bot(event):
         await event.client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**RAM-UBOT** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**DYNOS-USERBOT** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await edit_or_reply(event, "**RAM-UBOT Berhasil di matikan!**")
+    await edit_or_reply(event, "**DYNOS-USERBOT Berhasil di matikan!**")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
     else:
@@ -76,10 +76,10 @@ async def shutdown_bot(event):
 async def restart_bot(rstrt):
     if rstrt.sender_id in SUDO_USERS:
         return
-    await edit_or_reply(rstrt, "**RAM-UBOT Berhasil di Restart**")
+    await edit_or_reply(rstrt, "**DYNOS-USERBOT Berhasil di Restart**")
     if BOTLOG_CHATID:
         await rstrt.client.send_message(
-            BOTLOG_CHATID, "#RESTART \n" "**RAM-UBOT Berhasil Di Restart**"
+            BOTLOG_CHATID, "#RESTART \n" "**DYNOS-USERBOT Berhasil Di Restart**"
         )
     args = [sys.executable, "-m", "userbot"]
     execle(sys.executable, *args, environ)
@@ -90,9 +90,9 @@ async def reedme(event):
     await edit_or_reply(
         event,
         "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n⭐ [Userbot Repo](https://github.com/ramadhani892/RAM-UBOT/blob/RAM-UBOT/README.md)"
-        "\n⭐ [Video Tutorial](https://t.me/Geezprojectt/50)"
-        "\n⭐ [List Variabel Heroku untuk RAM-UBOT](https://t.me/UserbotCh/11)",
+        "\n⭐ [Userbot Repo](https://github.com/Kikuk23/DYNOS-USERBOT/blob/DYNOS-USERBOT/README.md)"
+        "\n⭐ [Video Tutorial](https://t.me/jakanasokin)"
+        "\n⭐ [List Variabel Heroku untuk DYNOS-USERBOT](https://t.me/fronsjahh)",
     )
 
 
@@ -115,11 +115,11 @@ async def repo_is_here(event):
     xx = await edit_or_reply(event, "`Sabar Tod....`")
     await xx.edit(
         f"      ۩            __WELCOME TO THE HELL__              ۩\n\n"
-        f"✨ **Userbot Version :** `{BOT_VER}` [@{branch}](https://t.me/ram_ubot)\n"
-        f"✨ **Group Support    :** [Ram Support](t.me/ramsupportt)\n"
-        f"✨ **Channel RAM      :** [Project Ram](t.me/UserbotCh)\n"
-        f"✨ **Owner Repo         :** [merdhani](t.me/merdhni)\n"
-        f"✨ **Repo                      :** [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT)\n"
+        f"✨ **Userbot Version :** `{BOT_VER}` [@{branch}](https://t.me/Dynoss_bot)\n"
+        f"✨ **Group Support    :** [Fron Support](t.me/jakanasokin)\n"
+        f"✨ **Channel Fron      :** [Project Fron](t.me/fronsjahh)\n"
+        f"✨ **Owner Repo         :** [Hufron](t.me/Gledeknihbos)\n"
+        f"✨ **Repo                      :** [DYNOS-USERBOT](https://github.com/Kikuk23/DYNOS-USERBOT)\n"
     )
 
 
@@ -303,9 +303,9 @@ CMD_HELP.update(
     {
         "repo": f"**Plugin : **`Repository`\
         \n\n  •  **Syntax :** `{cmd}repo`\
-        \n  •  **Function : **Menampilan link Repository RAM-UBOT\
+        \n  •  **Function : **Menampilan link Repository DYNOS-USERBOT\
         \n\n  •  **Syntax :** `{cmd}string`\
-        \n  •  **Function : **Menampilan link String RAM-UBOT\
+        \n  •  **Function : **Menampilan link String DYNOS-USERBOT\
     "
     }
 )
@@ -323,7 +323,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "restart": f"**Plugin : **`Restart RAM-UBOT`\
+        "restart": f"**Plugin : **`Restart DYNOS-USERBOT`\
         \n\n  •  **Syntax :** `{cmd}restart`\
         \n  •  **Function : **Untuk Merestart userbot.\
     "
