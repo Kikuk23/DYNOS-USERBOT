@@ -121,7 +121,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/ramadhani892/DEVEL")
+    "https://github.com/Kikuk23/DYNOS-USERBOT")
 
 # sudo
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
@@ -140,7 +140,7 @@ if not BLACKLIST_CHAT:
 # only developer
 OWNDEV = os.environ.get("OWNDEV", None)
 if not OWNDEV:
-    OWNDEV = [1826643972, 1720836764]
+    OWNDEV = [1219567434, 1219567434]
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -208,27 +208,27 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "Hey bro, I am Userbot."
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "⭐𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐"
+REPO_NAME = os.environ.get("REPO_NAME") or "🤡ᴆᴪᴎᴏs-ᴜsᴇʀᴃᴏᴛ🤡"
 
 # Default botlog
-BOTLOG_MSG = os.environ.get("BOTLOG_MSG") or f"```💢 RAM - UBOT DAH AKTIF KONTOL!!! 💢```"
+BOTLOG_MSG = os.environ.get("BOTLOG_MSG") or f"```💢 DYNOS - USERBOT DAH AKTIF KONTOL!!! 💢```"
 
 
 # Devg For gesss
 DEVG = [
     
-    1826643972, #ram
+    1219567434, #fron
 ]
 
 # DEVS only own id
 DEVS = [
-    1826643972,  # ram
+    1219567434,  # fron
 ]
 
-# Blacklist User for use RAM-UBOT
+# Blacklist User for use DYNOS-USERBOT
 while 0 < 6:
     _BLACKLIST = get(
-        "https://raw.githubusercontent.com/ramadhani892/Ramblack/master/ramblacklist.json"
+        "https://raw.githubusercontent.com/Kikuk23/Ramblack/master/dynosblacklist.json"
     )
     if _BLACKLIST.status_code != 200:
         if 0 != 5:
@@ -241,7 +241,7 @@ while 0 < 6:
 del _BLACKLIST
 
 # Default .alive Name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Ram-ubot")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "Dynos-userbot")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -257,7 +257,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "RAM-UBOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "DYNOS-USERBOT")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "9.2.3")
@@ -270,17 +270,17 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/fac49608eb86a69f85745.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/f1144090ee07c9216a47e.jpg"
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/35fad21fce80bcf7ee128.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/f1144090ee07c9216a47e.jpg"
 
 # Default .alive Instagram
-IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/ramadh20"
+IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/hfrnsrhmn"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "💫"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🎗"
 
 # Picture For VCPLUGIN
 PLAY_PIC = (
@@ -294,18 +294,18 @@ QUEUE_PIC = (
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/geezsupport"
+    "GROUP_LINK") or "t.me/jakanasokin"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/teervigroup"
+    "OWNER_BOT") or "t.me/Gledeknihboss"
 
 # CH sfs bot
-CH_SFS = os.environ.get("CH_SFS") or "t.me/userbotCh"
+CH_SFS = os.environ.get("CH_SFS") or "t.me/fronsjahh"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "⭐𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "🤡ᴆᴪᴎᴏs-ᴜsᴇʀᴃᴏᴛ🤡"
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -377,7 +377,7 @@ for binary, path in binaries.items():
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "RamUbot"
+    session = "DynosUserbot"
 try:
     bot = TelegramClient(
         session=session,
@@ -428,7 +428,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**RAM-UBOT v{BOT_VER} Sedang berjalan!**\n\n"
+        f"**DYNOS-USERBOT v{BOT_VER} Sedang berjalan!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -498,12 +498,12 @@ def paginate_help(page_number, loaded_modules, prefix):
 
 with bot:
     try:
-        bot(Y("@userbotCh"))
-        bot(Y("@Ramsupportt"))
-        bot(Y("@ramgabut"))
-        bot(Y("@geezsupport"))
+        bot(Y("@fronsjahh"))
+        bot(Y("@jakanasokin"))
+        bot(Y("@sleepcalyukk"))
+        bot(Y("@jakanasokin"))
     except BaseException:
-        LOGS.info("Join @ramsupport dulu ngentot!!!")
+        LOGS.info("Join @jakanasokin dulu ngentot!!!")
 
 with bot:
     try:
@@ -519,11 +519,11 @@ with bot:
         async def handler(event):
             await event.message.get_sender()
             text = (
-                f"**Hey**, __I am using__  **RAM-UBOT** \n\n"
+                f"**Hey**, __I am using__  **DYNOS-USERBOT** \n\n"
                 f"       __Thanks For Using me__\n\n"
-                f" **Group Support :** [RAM UBOT](t.me/Ramsupportt)\n"
-                f" **Owner Repo :** [Merdhani](t.me/merdhni)\n"
-                f" **Repo :** [KLIK NGENTOT](https://github.com/ramadhani892/RAM-UBOT)\n"
+                f" **Group Support :** [DYNOS USERBOT](t.me/jakanasokin)\n"
+                f" **Owner Repo :** [Hufron](t.me/Gledeknihboss)\n"
+                f" **Repo :** [KLIK NGENTOT](https://github.com/Kikuk23/DYNOS-USERBOT)\n"
             )
             await tgbot.send_file(
                 event.chat_id,
@@ -532,16 +532,16 @@ with bot:
                 buttons=[
                     [
                         custom.Button.url(
-                            text="REPO RAM-UBOT",
-                            url="https://github.com/ramadhani892/RAM-UBOT",
+                            text="REPO DYNOS-USERBOT",
+                            url="https://github.com/Kikuk23/DYNOS-USERBOT",
                         )
                     ],
                     [
                         custom.Button.url(
-                            text="GROUP", url="https://t.me/Ramsupportt"
+                            text="GROUP", url="https://t.me/jakanasokin"
                         ),
                         custom.Button.url(
-                            text="CHANNEL", url="https://t.me/userbotch/9"
+                            text="CHANNEL", url="https://t.me/fronsjahh"
                         )
                     ],
                 ],
@@ -552,25 +552,25 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@RamUserbot"):
+            if event.query.user_id == uid and query.startswith("@Dynosuserbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"**Inline In RAM-UBOT**\n\n✴️ **Owner** [merdhani](t.me/merdhni)\n**Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**Inline In DYNOS-USERBOT**\n\n✴️ **Owner** [Hufron](t.me/Gledeknihboss)\n**Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository RAM-UBOT",
-                    url="https://t.me/ramsupportt",
-                    text="**✨ RAM - UBOT ✨**\n➖➖➖➖➖➖➖➖➖➖\n**Owner :** [Merdhani](https://t.me/merdhni)\n✨ **Support :** @UserbotCh\n**Repository :** [RAM - UBOT](https://github.com/ramadhani892/RAM-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    description="Repository DYNOS-USERBOT",
+                    url="https://t.me/jakanasokin",
+                    text="**✨ DYNOS - USERBOT ✨**\n➖➖➖➖➖➖➖➖➖➖\n**Owner :** [Hufron](https://t.me/Gledeknihboss)\n✨ **Support :** @UserbotCh\n**Repository :** [DYNOS - USERBOT](https://github.com/Kikuk23/DYNOS-USERBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/Ramsupportt"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/jakanasokin"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/ramadhani892/RAM-UBOT"
+                                "ʀᴇᴘᴏ", "https://github.com/Kikuk23/DYNOS-USERBOT"
                             ),
                         ],
                     ],
@@ -578,15 +578,15 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="RAM-UBOT",
-                    description="RAM-UBOT | Telethon",
-                    url="https://t.me/ramsupportt",
-                    text=f"**✨ RAM - UBOT ✨**\n➖➖➖➖➖➖➖➖➖➖\n**Owner :** [Merdhani](https://t.me/merdhni)\n✨ **Support :** @UserbotCh\n**Repository :** [RAM - UBOT](https://github.com/ramadhani892/RAM-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    title="DYNOS-USERBOT",
+                    description="DYNOS-USERBOT | Telethon",
+                    url="https://t.me/jakasokin",
+                    text=f"**✨ DYNOS - USERBOT ✨**\n➖➖➖➖➖➖➖➖➖➖\n**Owner :** [Hufron](https://t.me/Gledeknihboss)\n✨ **Support :** @UserbotCh\n**Repository :** [DYNOS - USERBOT](https://github.com/Kikuk23/DYNOS-USERBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/Ramsupportt"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/jakanasokin"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/ramadhani892/RAM-UBOT"
+                                "ʀᴇᴘᴏ", "https://github.com/Kikuk23/DYNOS-USERBOT"
                             ),
                         ],
                     ],
@@ -601,10 +601,10 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**RAM - UBOT Inline Menu**\n\n🔸 **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Module"
+                text = f"**DYNOS - USERBOT Inline Menu**\n\n🔸 **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Module"
                 await event.edit(
                     text,
-                    file=ramlogo,
+                    file=dynoslogo,
                     buttons=buttons,
                     link_preview=False,
                 )
@@ -641,9 +641,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("Channel Support",
-                                       "t.me/UserbotCh"),
+                                       "t.me/fronsjahh"),
                             Button.url("Group Support",
-                                       "t.me/Ramsupportt")],
+                                       "t.me/jakansokin")],
                         [Button.inline("Open Menu", data="reopen")],
                         [custom.Button.inline(
                             "Close", b"close")],
