@@ -1,7 +1,7 @@
 {
-  "name": "RAM-UBOT",
-  "description": "[RAM-UBOT] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
-  "logo": "https://telegra.ph/file/be5a4a2cb6aac37ca7945.jpg",
+  "name": "DYNOS-USERBOT",
+  "description": "[DYNOS-USERBOT] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "logo": "https://telegra.ph/file/f1144090ee07c9216a47e.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/ramadhani892/RAM-UBOT",
-  "telegram": "https://t.me/Ramadhaniiiiiii1",
-  "success_url": "https://t.me/ootspambott",
+  "repository": "https://github.com/Kikuk23/DYNOS-USERBOT",
+  "telegram": "https://t.me/Gledeknihboss",
+  "success_url": "https://t.me/jakanasokin",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -23,7 +23,7 @@
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di Grup » @ramsupportt » Lalu ketik #string",
+      "description": "Dapatkan String Session di Grup » @jakanasokin » Lalu ketik #string",
       "required": true
     },
     "HEROKU_APP_NAME": {
